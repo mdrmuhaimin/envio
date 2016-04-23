@@ -3,9 +3,9 @@
      angular.module('envio').directive('issues', function () {
          return {
            restrict: 'E',
-           controller: 'issueController',
-           controllerAs: 'mv',
-           templateUrl: './templates/issue-board.html'
+           controller: 'issuesCtrl',
+           controllerAs: 'issues',
+           templateUrl: './templates/issues.html'
          };
      });
 })();
