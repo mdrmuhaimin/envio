@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;                <!--menu links size -->
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 15px !important;
+    margin-right: 50px;
+}
+
+.extras{
+  width: auto; 
+  height: auto;
+  padding-top: 5px;
+  max-width: 50px;
+  max-height: 50px;
+  float: right;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+    <!-- padding-right: 0%;
+    -->
+}
+
+.nbar{float:right;}
+
+.header {
+	height: 50px;
+	background-color: #009933;
+}
+
+
+
+
+.write {
+	padding-right: 50px;
+}
+
+.name {
+	font-size: 30px;
+	font-family: castellar;
+}
+
+.container {
+	display: none;
+}
+
+
+
+
+
+.trend {
+	padding-left: 80px;
+	font-size: 20px;
+}
+
+
+.recent {
+	padding-right: 200px;
+	font-size: 20px;
+}
+
+.h1 {
+	width: 50%;
+	float: left;
+	background-color: #D3D3D3;
+}
+
+.h2 {
+
+	width: 50%;
+	float: right;
+	background-color: #D3D3D3;
+}
+
+
+
+
+<!-- Have Javascript Display using Jquery -->
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+
+
+
+</style>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+  <a href="#">Global</a>   
+  <a href="#">Local</a>    
+  <a href="#">Health</a>   
+  <a href="#">Heat Map</a>     
+</div>
+
+
+
+<div class = "header">
+  <p1 class = "name">AirCheck</p1>	
+  <span class = "nbar" style="font-size:30px;cursor:pointer" onclick="openNav()" >
+    <img class = "extras"  src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png">
+  </img>
+  </span>
+  <img class = "extras"  src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png">
+  </img>
+  <img class = "extras"  src="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/zoom-search-2-icon.png">
+  </img>
+  <img class = "extras" class= "write" src="http://www.wpclipart.com/education/classwork/handwriting/edit_write_icon_T.png">
+  </img>
+  </img>
+  
+</div>
+
+<div class = "h1" >
+	<p class = "trend">TRENDING</p>
+</div>
+<div class = "h2">
+	<p class = "recent">RECENT</p>
+</div>
+
+
+<div class="container">
+  <h2>AirCheck</h2>
+  <p>What is the Problem?</p>                  
+  <ul class="nav nav-tabs" role="tablist">
+    <li><a href="#">Local Disaster</a></li>
+    <li><a href="#">Health Issue</a></li>
+    <li><a href="#">Natural Disaster</a></li>        
+  </ul>
+  <div class = "form">
+		<form>
+  	Issue: <br>
+  	<input type="text" name="issue">
+  	<br>
+  	Location:<br>
+  	<input type="text" name="location">
+  	<br>
+  	Time:<br>
+  	<input type="text" name="time">
+  	<br>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+}
+
+
+
+</script>
+
+</body>
+</HTML>
