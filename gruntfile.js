@@ -11,9 +11,21 @@
                         base: '.'
                     }
                 }
+            },
+            includeSource: {
+                options: {
+                    basePath: './',
+                    baseUrl: ''
+                },
+                myTarget: {
+                    files: {
+                        'index.html': 'index.tpl.html'
+                    }
+                }
             }
         });
+        grunt.loadNpmTasks('grunt-include-source');
         grunt.loadNpmTasks('grunt-contrib-connect');
-        grunt.registerTask('serve', ['connect']);
+        grunt.registerTask('serve', ['includeSource', 'connect']);
     };
 })();

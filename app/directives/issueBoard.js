@@ -4,7 +4,8 @@
          return {
            restrict: 'E',
            controller: 'issueController',
-           controllerAs: 'mv'  
+           controllerAs: 'mv',
+           templateUrl: './templates/issue-board.html'
          };
      });
 })();

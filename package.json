@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/mdrmuhaimin/envio#readme",
   "dependencies": {
+    "bower": "^1.7.9",
     "grunt": "^1.0.1",
-    "grunt-contrib-connect": "^1.0.1"
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-include-source": "^0.7.1"
   }
 }
