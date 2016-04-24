@@ -1,3 +1,121 @@
-<div>
-  {{issues.hello}}
+<style>
+  .searchBar {
+    font-size: 60px;
+    color: olive;
+    background-color: lightgrey;
+    font-family: Calibri;
+    text-shadow: 2px 2px black;
+  }
+  
+  .voteElement {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .voteArea {
+    padding-top:15px;
+    padding-bottom:5px;
+  }
+  .issueArea {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  
+  .issueRow {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom: 3px groove #ECF0F1;
+  }
+  
+  .title {
+    padding-top: 5px; 
+    font-size: 40px;
+    color: #1E824C;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .timeStamps {
+    padding-top: 5px; 
+    font-size: 15px;
+    color: black;
+    /*background-color: grey;*/
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .top-pic {
+    text-align: center;
+    display: block;
+  }
+  
+  .desc-tags {
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .image {
+    max-width:100%;
+    max-height:100%;
+  }
+  .tagName {
+    border-radius: 15px;
+    float: left;
+    color: #39739d;
+    background-color: #E1ECF4;
+    border-color: transparent;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  .commentBox {
+    width: 100%;
+    border: 1px solid grey;
+  }
+  .comment {
+    margin-top: 10px;
+  }
+  .commentContent {
+      background-color: lightgray; 
+  }
+  
+</style>
+
+<div class="col-xs-12 searchBar">
+  <center> &nbsp;</center>
+</div>
+
+<div class="col-xs-12 issueRow" ng-repeat="issue in issues.issues">
+  <div class="col-xs-2 voteArea">
+    <div class="col-xs-12 voteElement">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <div class="col-xs-12 voteElement">
+      {{issue.voteCount}} 
+    </div>
+    <div class="col-xs-12 voteElement">
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="col-xs-10 issueArea" ng-click="issue.display = !issue.display" ng-init="issue.display = false">
+    <div class="col-xs-12 title"> {{issue.issue}}</div>
+    <div ng-if="!issue.display" class="col-xs-12 desc-tags">{{issue.description.slice(0,140)}}</div> 
+    <div ng-if="issue.display && issue.image" class="col-xs-12"><img class="image" ng-src="{{issue.image}}" alt="Bush Fire" /></div> 
+    <div ng-if="issue.display" class="col-xs-12 desc-tags">{{issue.description}}</div> 
+    <div class="col-xs-12 desc-tags"> 
+      <div ng-if="issue.type" class="tagName">{{issue.type}}</div>
+      <div class="tagName">{{issue.location}}</div>
+      <div class="tagName" ng-repeat="tag in issue.tags">{{tag}}</div>
+    </div>
+    <div class="col-xs-12 timeStamps">Submitted at: {{issue.createdAt | date:'yyyy-MM-dd HH:mm'}} by {{issue.author}}</div>
+    <div ng-if="issue.display" class="col-xs-12">
+      <textarea class="commentBox" name="input" ng-model="issue.comment" required ng-trim="false" placeholder="Enter your comment."></textarea>
+    </div>
+    <div ng-if="issue.display" class="col-xs-12 comment" ng-repeat="comment in issue.comments">
+      <div class="col-xs-1">
+        <div class="col-xs-12"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+        <div class="col-xs-12">{{comment.voteCount}}</div>
+      </div>
+      <div class="col-xs-11 commentContent">
+        <div class="col-xs-12">{{comment.comment}}</div>
+        <div class="col-xs-12"> - {{comment.author}} at {{comment.createdAt | date:'yyyy-MM-dd HH:mm' }}</div>
+      </div>
+    </div>
+  </div>
 </div>

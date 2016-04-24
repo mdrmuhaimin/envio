@@ -1,8 +1,7 @@
 <div>
-  {{newsfeed.hello}}
-  <issues></issues>
-  <emergencies-local></emergencies-local>
-  <emergencies-global></emergencies-global>
+  <!-- {{newsfeed.hello}} -->
+  <!-- <emergencies-local></emergencies-local> -->
+  <!-- <emergencies-global></emergencies-global> -->
   <style>
     body {
       font-family: "Lato", sans-serif;
@@ -62,7 +61,7 @@
     }
     
     .header {
-      height: 64px;
+      height: 114px;
       background-color: #1E824C;
       padding:7px;
     }
@@ -72,14 +71,14 @@
     }
     
     .logo {
-      font-size: 40px;
+      font-size: 80px;
       font-family: 'Courgette', cursive;
-      color: #C8F7C5;
+      color: #ECF0F1;
     }
     
     .icon-unselected {
-      font-size: 45px;
-      color: #C8F7C5;
+      font-size: 100px;
+      color: #ECF0F1;
     }
     
     .container {
@@ -130,10 +129,9 @@
 
 
   <div class="header">
-    <div class="logo col-xs-4">Envio</div>
-    <div class="col-xs-8">
+    <div class="logo col-xs-2">Envio</div>
+    <div class="col-xs-10">
       <div class="col-xs-2">
-        <!--<i class="fa fa-search icon-unselected" aria-hidden="true"></i>-->
         &nbsp;
       </div>
       <div class="col-xs-2" >
@@ -141,7 +139,6 @@
       </div>
       <div class="col-xs-2">
         <i class="material-icons icon-unselected">trending_up</i>
-        <!--<i class="fa fa-globe icon-unselected" aria-hidden="true"></i>-->
       </div>
       <div class="col-xs-2">
         <i class="fa fa-map icon-unselected" aria-hidden="true"></i>
@@ -152,61 +149,14 @@
       <div class="col-xs-2">
         <i class="material-icons icon-unselected">note_add</i>
       </div>
-      <!--<span class="nbar" style="font-size:30px;cursor:pointer" onclick="openNav()">
-        <img class = "extras"  src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png"></img>
-      </span>
-      <img class="extras" src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png"></img>
-      <img class="extras" src="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/zoom-search-2-icon.png"></img>
-      <img class="extras" class="write" src="http://www.wpclipart.com/education/classwork/handwriting/edit_write_icon_T.png"></img>-->
     </div>
     
 
   </div>
-
-  <!--<div class="h1">
-    <p class="trend">TRENDING</p>
-  </div>
-  <div class="h2">
-    <p class="recent">RECENT</p>
-  </div>-->
-
-
-  <div class="container">
-    <h2>Envio</h2>
-    <p>What is the Problem?</p>
-    <ul class="nav nav-tabs" role="tablist">
-      <li><a href="#">Local Disaster</a></li>
-      <li><a href="#">Health Issue</a></li>
-      <li><a href="#">Natural Disaster</a></li>
-    </ul>
-    <div class="form">
-      <form>
-        Issue: <br>
-        <input type="text" logo="issue">
-        <br> Location:
-        <br>
-        <input type="text" logo="location">
-        <br> Time:
-        <br>
-        <input type="text" logo="time">
-        <br>
-      </form>
-    </div>
-  </div>
+  <issues></issues>
 
 
 
 
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginRight = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginRight = "0";
-    }
-  </script>
 </div>
