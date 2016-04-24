@@ -1,4 +1,4 @@
 (function () {
     'use strict';
-    angular.module('envio', []);
+    angular.module('envio', ['flow']);
 })();

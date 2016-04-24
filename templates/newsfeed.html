@@ -1,6 +1,5 @@
 <div>
   <!-- {{newsfeed.hello}} -->
-  <!-- <emergencies-local></emergencies-local> -->
   <!-- <emergencies-global></emergencies-global> -->
   <style>
     body {
@@ -117,17 +116,6 @@
     }
   </style>
 
-
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-    <a href="#">Global</a>
-    <a href="#">Local</a>
-    <a href="#">Health</a>
-    <a href="#">Heat Map</a>
-  </div>
-
-
-
   <div class="header">
     <div class="logo col-xs-2">Envio</div>
     <div class="col-xs-10">
@@ -137,7 +125,7 @@
       <div class="col-xs-2" >
         <i class="glyphicon glyphicon-time icon-unselected" aria-hidden="true"></i>
       </div>
-      <div class="col-xs-2">
+      <div class="col-xs-2" ng-click="newsfeed.isInputMode = false">
         <i class="material-icons icon-unselected">trending_up</i>
       </div>
       <div class="col-xs-2">
@@ -146,14 +134,16 @@
       <div class="col-xs-2">
         <i class="fa fa-tags icon-unselected" aria-hidden="true"></i>
       </div>
-      <div class="col-xs-2">
+      <div class="col-xs-2" ng-click="newsfeed.isInputMode = true">
         <i class="material-icons icon-unselected">note_add</i>
       </div>
     </div>
     
 
   </div>
-  <issues></issues>
+  <issues ng-if='!newsfeed.isInputMode'></issues>
+  <user-input ng-if='newsfeed.isInputMode'></input> 
+  
 
 
 

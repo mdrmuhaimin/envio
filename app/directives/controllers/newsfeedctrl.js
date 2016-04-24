@@ -1,6 +1,7 @@
 (function () {
     'use strict';
     var ctrlFunction = function (){
+        this.isInputMode = false;
         this.hello = 'News Feed Ctrl';
         console.log('News Feed');
     };
