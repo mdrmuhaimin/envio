@@ -75,9 +75,16 @@
       color: #ECF0F1;
     }
     
-    .icon-unselected {
-      font-size: 100px;
+    .unselected {
       color: #ECF0F1;
+    }
+    
+    .selected {
+      color: #f1c40f;
+    }
+    
+    .icon {
+        font-size: 100px;
     }
     
     .container {
@@ -117,32 +124,32 @@
   </style>
 
   <div class="header">
-    <div class="logo col-xs-2">Envio</div>
+    <div class="logo col-xs-2" ng-class="{'selected': newsfeed.selected.homepage, 'unselected': !newsfeed.selected.homepage }" ng-click="newsfeed.changeIssueType('homepage')">Envio</div>
     <div class="col-xs-10">
       <div class="col-xs-2">
         &nbsp;
       </div>
-      <div class="col-xs-2" >
-        <i class="glyphicon glyphicon-time icon-unselected" aria-hidden="true"></i>
+      <div class="col-xs-2" ng-click="newsfeed.changeIssueType('recent')" ng-class="{'selected': newsfeed.selected.recent, 'unselected': !newsfeed.selected.recent }">
+        <i class="glyphicon glyphicon-time icon" aria-hidden="true"></i>
       </div>
-      <div class="col-xs-2" ng-click="newsfeed.isInputMode = false">
-        <i class="material-icons icon-unselected">trending_up</i>
+      <div class="col-xs-2" ng-click="newsfeed.changeIssueType('globalTrending')" ng-class="{'selected': newsfeed.selected.globalTrending, 'unselected': !newsfeed.selected.globalTrending }">
+        <i class="material-icons icon">trending_up</i>
       </div>
-      <div class="col-xs-2">
-        <i class="fa fa-map icon-unselected" aria-hidden="true"></i>
+      <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.map = true" ng-class="{'selected': newsfeed.selected.map, 'unselected': !newsfeed.selected.map }">
+        <i class="fa fa-map icon" aria-hidden="true"></i>
       </div>
-      <div class="col-xs-2">
-        <i class="fa fa-tags icon-unselected" aria-hidden="true"></i>
+      <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.tag = true" ng-class="{'selected': newsfeed.selected.tag, 'unselected': !newsfeed.selected.tag }">
+        <i class="fa fa-tags icon" aria-hidden="true"></i>
       </div>
-      <div class="col-xs-2" ng-click="newsfeed.isInputMode = true">
-        <i class="material-icons icon-unselected">note_add</i>
+      <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.input = true" ng-class="{'selected': newsfeed.selected.input, 'unselected': !newsfeed.selected.input }">
+        <i class="material-icons icon">note_add</i>
       </div>
     </div>
     
 
   </div>
-  <issues ng-if='!newsfeed.isInputMode'></issues>
-  <user-input ng-if='newsfeed.isInputMode'></input> 
+  <issues ng-if='!newsfeed.selected.input' issues=newsfeed.issues></issues>
+  <user-input ng-if='newsfeed.selected.input'></input> 
   
 
 
