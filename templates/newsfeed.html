@@ -135,10 +135,10 @@
       <div class="col-xs-2" ng-click="newsfeed.changeIssueType('globalTrending')" ng-class="{'selected': newsfeed.selected.globalTrending, 'unselected': !newsfeed.selected.globalTrending }">
         <i class="material-icons icon">trending_up</i>
       </div>
-      <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.map = true" ng-class="{'selected': newsfeed.selected.map, 'unselected': !newsfeed.selected.map }">
+      <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.map = true; autoCenter();" ng-class="{'selected': newsfeed.selected.map, 'unselected': !newsfeed.selected.map }">
         <i class="fa fa-map icon" aria-hidden="true"></i>
       </div>
-      <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.tag = true" ng-class="{'selected': newsfeed.selected.tag, 'unselected': !newsfeed.selected.tag }">
+      <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.tags = true" ng-class="{'selected': newsfeed.selected.tags, 'unselected': !newsfeed.selected.tags }">
         <i class="fa fa-tags icon" aria-hidden="true"></i>
       </div>
       <div class="col-xs-2" ng-click="newsfeed.selected = {}; newsfeed.selected.input = true" ng-class="{'selected': newsfeed.selected.input, 'unselected': !newsfeed.selected.input }">
@@ -148,7 +148,9 @@
     
 
   </div>
-  <issues ng-if='!newsfeed.selected.input' issues=newsfeed.issues></issues>
+  <issues ng-if='!newsfeed.selected.input && !newsfeed.selected.map && !newsfeed.selected.tags' issues=newsfeed.issues></issues>
+  <map ng-if='newsfeed.selected.map'></map>
+  <!--<tags ng-if='newsfeed.selected.tags'>hello</tags>-->
   <user-input ng-if='newsfeed.selected.input'></input> 
   
 

@@ -386,119 +386,200 @@
 
             ],
             recentIssues = [{
-                "issue": "Air Quality",
-                "author": "Chris Rennick",
-                "type": "Environment",
-                "description": "A gas leak at UofW has closed down the entire E2 wing. Please stay void of this area.",
-                "location": "Waterloo, ON, Canada",
-                "voteCount": 24,
-                "tags": [
-                    "Waterloo",
-                    "Hazy",
-                    "Air",
-                    "suffocation"
-                ],
-                "comments": [{
-                    "author": "Kush Patel",
-                    "comment": "Is school going to be closed?",
-                    "voteCount": 136,
+                    "issue": "Air Pollution",
+                    "author": "Chris Rennick",
+                    "type": "Environment",
+                    "description": "A gas leak at UofW has closed down the entire E2 wing. Please stay void of this area.",
+                    "location": "Waterloo, ON, Canada",
+                    "voteCount": 24,
+                    "tags": [
+                        "Waterloo",
+                        "Hazy",
+                        "Air",
+                        "suffocation"
+                    ],
+                    "comments": [{
+                        "author": "Kush Patel",
+                        "comment": "Is school going to be closed?",
+                        "voteCount": 136,
+                        "createdAt": 1461473816929
+                    }, {
+                        "author": "Feridun Hamid",
+                        "comment": "School will never close.",
+                        "voteCount": 100,
+                        "createdAt": 1461473816929
+                    }],
+                    "image": "http://michaelmurray.ca/wp-content/uploads/2013/12/smog3.jpg",
                     "createdAt": 1461473816929
                 }, {
-                    "author": "Feridun Hamid",
-                    "comment": "School will never close.",
-                    "voteCount": 100,
-                    "createdAt": 1461473816929
-                }],
-                "image": "http://michaelmurray.ca/wp-content/uploads/2013/12/smog3.jpg",
-                "createdAt": 1461473816929
-            }, {
-                "issue": "Volcanic Dust",
-                "author": "Wasif Zulkerfar",
-                "type": "Air Quality",
-                "description": "Massive amounts of volcanic dust has clouded the area",
-                "location": "Etna, Italy",
-                "voteCount": "603",
-                "tags": [
-                    "Italy",
-                    "MtEtna"
-                ],
-                "comments": [{
-                    "author": "John Travolta",
-                    "comment": "Scary.",
-                    "voteCount": 67,
+                    "issue": "Volcanic Dust",
+                    "author": "Wasif Zulkerfar",
+                    "type": "Air Quality",
+                    "description": "Massive amounts of volcanic dust has clouded the area",
+                    "location": "Etna, Italy",
+                    "voteCount": "603",
+                    "tags": [
+                        "Italy",
+                        "MtEtna"
+                    ],
+                    "comments": [{
+                        "author": "John Travolta",
+                        "comment": "Scary.",
+                        "voteCount": 67,
+                        "createdAt": 1461473816929
+                    }, {
+                        "author": "John Cena",
+                        "comment": "Very scary. Thoughts with those afflicted",
+                        "voteCount": 78,
+                        "createdAt": 1461473816929
+                    }],
+                    "image": "http://msnbcmedia.msn.com/i/MSNBC/Components/Photo/_new/pb-120424-etna-volcano-jm-01.jpg",
                     "createdAt": 1461473816929
                 }, {
-                    "author": "John Cena",
-                    "comment": "Very scary. Thoughts with those afflicted",
-                    "voteCount": 78,
-                    "createdAt": 1461473816929
-                }],
-                "image": "http://msnbcmedia.msn.com/i/MSNBC/Components/Photo/_new/pb-120424-etna-volcano-jm-01.jpg",
-                "createdAt": 1461473816929
-            }, {
-                "issue": "Acid Smog",
-                "author": "David Serif",
-                "type": "Flint, Michigan",
-                "description": "Water poisons have evaporated in the air. Wear masks if traveling",
-                "location": "Flint, Michigan",
-                "voteCount": 93,
-                "tags": [
-                    "FlintMichigan",
-                    "AcidAir",
-                    "Pollution",
-                    "toxicAir"
-                ],
-                "comments": [{
-                    "author": "Ryan Davey",
-                    "comment": "This is so scary. The government has to do something about this",
-                    "voteCount": 500,
+                    "issue": "Acid Smog",
+                    "author": "David Serif",
+                    "type": "Flint, Michigan",
+                    "description": "Water poisons have evaporated in the air. Wear masks if traveling",
+                    "location": "Flint, Michigan",
+                    "voteCount": 93,
+                    "tags": [
+                        "FlintMichigan",
+                        "AcidAir",
+                        "Pollution",
+                        "toxicAir"
+                    ],
+                    "comments": [{
+                        "author": "Ryan Davey",
+                        "comment": "This is so scary. The government has to do something about this",
+                        "voteCount": 500,
+                        "createdAt": 1461473816323
+                    }, {
+                        "author": "Josh Wu",
+                        "comment": "Very scary. Thoughts with those afflicted",
+                        "voteCount": 67,
+                        "createdAt": 1461473816323
+                    }],
+                    "image": "http://s3.amazonaws.com/media.wbur.org/wordpress/11/files/2015/12/1216_flint-river.jpg",
                     "createdAt": 1461473816323
                 }, {
-                    "author": "Josh Wu",
-                    "comment": "Very scary. Thoughts with those afflicted",
-                    "voteCount": 67,
-                    "createdAt": 1461473816323
-                }],
-                "image": "http://s3.amazonaws.com/media.wbur.org/wordpress/11/files/2015/12/1216_flint-river.jpg",
-                "createdAt": 1461473816323
-            }, {
-                "issue": "High humidity",
-                "author": "Jenny Sharp",
-                "type": "Environment",
-                "description": "Humidty is impeding breathing quality outside. Avoid heavy physical activity",
-                "location": "Toronto, ON, Canada",
-                "voteCount": "98",
-                "tags": [
-                    "humid",
-                    "superwarm",
-                    "fieryhot",
-                ],
-                "comments": [{
-                    "author": "Nabil Barakati",
-                    "comment": "I think I might be going for a jog anyways",
-                    "voteCount": 55,
+                    "issue": "High humidity",
+                    "author": "Jenny Sharp",
+                    "type": "Environment",
+                    "description": "Humidty is impeding breathing quality outside. Avoid heavy physical activity",
+                    "location": "Toronto, ON, Canada",
+                    "voteCount": "98",
+                    "tags": [
+                        "humid",
+                        "superwarm",
+                        "fieryhot"
+                    ],
+                    "comments": [{
+                        "author": "Nabil Barakati",
+                        "comment": "I think I might be going for a jog anyways",
+                        "voteCount": 55,
+                        "createdAt": 1461473816929
+                    }, {
+                        "author": "Tahmid Sayed",
+                        "comment": "Gunna go hide in my AC rn.",
+                        "voteCount": 730,
+                        "createdAt": 1461473816929
+                    }],
+                    "image": "http://www.cp24.com/polopoly_fs/1.2441721.1442835445!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg",
                     "createdAt": 1461473816929
                 }, {
-                    "author": "Tahmid Sayed",
-                    "comment": "Gunna go hide in my AC rn.",
-                    "voteCount": 730,
-                    "createdAt": 1461473816929
-                }],
-                "image": "http://www.cp24.com/polopoly_fs/1.2441721.1442835445!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg",
-                "createdAt": 1461473816929
-            }];
+                    "issue": "Cold Winds and Snow",
+                    "author": "Jimmy Choo",
+                    "type": "Environmental Warning",
+                    "description": "Very cold winds have been blowing across Canada, colder than usual. With 80+ mph wind and snow, it is not safe to go outside.",
+                    "location": "Waterloo, ON, Canada",
+                    "voteCount": 250,
+                    "tags": [
+                        "Cold",
+                        "Snow",
+                        "Windy"
+                    ],
+                    "comments": [{
+                        "author": "Real Canadian",
+                        "comment": "We're Canadians! We can take it! Just be a bit careful though!",
+                        "voteCount": 193,
+                        "createdAt": 1461473735629
+                    }, {
+                        "author": "Sakib Ar Rahman",
+                        "comment": "All schools and universities have been declared closed owing to the expected bad conditions but... UWaterloo is still open...",
+                        "voteCount": 223,
+                        "createdAt": 1461473817929
+                    }],
+                    "image": "http://i2.cdn.turner.com/cnn/dam/assets/140103112440-winter-weather-01030-20-horizontal-gallery.jpg",
+                    "createdAt": 1461593816929
+                },
+
+                {
+                    "issue": "Extreme Heat",
+                    "author": "Tamim Faruk",
+                    "type": "Environmental Warning",
+                    "description": "Average temperatures have risen over 35 degrees celcius over the past week in South Asia including regions of Bangladesh and West Bengal. Heat strokes are a possibility. Keeping a bottle of water handy is advisable.",
+                    "location": "Dhaka, Bangladesh",
+                    "voteCount": 250,
+                    "tags": [
+                        "Heat",
+                        "Hot",
+                        "Heat strokes",
+                        "Summer"
+                    ],
+                    "comments": [{
+                        "author": "Zaheen Tahiyat",
+                        "comment": "It's too hot, I can't take it anymore!",
+                        "voteCount": 14,
+                        "createdAt": 1461473735629
+                    }, {
+                        "author": "Ariff Ahmed",
+                        "comment": "To parents, be careful when children go out to play outside. Keep them hydrated.",
+                        "voteCount": 105,
+                        "createdAt": 1461473817929
+                    }],
+                    "image": "",
+                    "createdAt": 1461593816929
+                },
+
+                {
+                    "issue": "Forest Fire",
+                    "author": "Ricky Ponting",
+                    "type": "Environmental Disaster",
+                    "description": "A large smoke has been spotted close to NorthCliffe, 350 km South of Perth, Australia.",
+                    "location": "Northcliffe, Australia",
+                    "voteCount": 350,
+                    "tags": [
+                        "Forest fire",
+                        "Fire",
+                        "National Disaster"
+                    ],
+                    "comments": [{
+                        "author": "Shane Warne",
+                        "comment": "I spotted the smoke cloud in the morning. Informed the fire services right away. Hope everyone is safe.",
+                        "voteCount": 148,
+                        "createdAt": 1461473735629
+                    }, {
+                        "author": "Glenn Maxwell",
+                        "comment": "A large bushfire that has burned more than 80,0000 hectares of forest and private land in Western Australiaâ€™s south west has been declared a national disaster.",
+                        "voteCount": 10,
+                        "createdAt": 1461473817929
+                    }],
+                    "image": "http://www.saarc-sadkn.org/image/forest8.jpg",
+                    "createdAt": 1461593816929
+                }
+            ];
         this.changeIssueType = function(issue) {
             this.isInputMode = false;
             this.selected = {};
             // angular.forEach(this.selected, function(value, key) {
             //     this.selected[key] = false;
             //     });
-            this.selected[issue] = true; 
+            this.selected[issue] = true;
             if (issue === 'homepage') {
                 this.issues = homePageIssues;
             } else if (issue === 'globalTrending') {
                 this.issues = globalTrendingIssues;
-            } else if (issue === 'recent') { 
+            } else if (issue === 'recent') {
                 this.issues = recentIssues;
             }
         };
