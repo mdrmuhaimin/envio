@@ -1,0 +1,23 @@
+{
+  "name": "envio",
+  "version": "0.0.1",
+  "description": "Nasa Space App 2016 Project ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdrmuhaimin/envio.git"
+  },
+  "author": "Muhammad R Muhaimin, Sakib Ar Rahman, Nabil Barakati, Tamim Faruk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdrmuhaimin/envio/issues"
+  },
+  "homepage": "https://github.com/mdrmuhaimin/envio#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.1"
+  }
+}
